@@ -1,0 +1,1228 @@
+go 0xb000004c
+## Starting application at 0xB000004C ...
+[main_cpu_init : 325]Starting...Main CPU
+[memory] memory_init: enter
+vtcr:0x80000000
+vtcr:0x80000F40
+vttbr.baddr.x:0x00000005
+vttbr:0x000000000x00000000
+0x000000000x000000000x00000004&_hmm_pgtable[0]:0xB0213000
+lpaed:0x000000000x3E766E71
+0x000000000x400000000x00000007&_hmm_pgtable[1]:0xB0213008
+lpaed:0x000000000x7E766E7D
+0x000000000x800000000x00000007&_hmm_pgtable[2]:0xB0213010
+lpaed:0x000000000xBE766E7D
+&_hmm_pgtable[3]:0xB0213018
+lpaed:0x800000000xB0214E7F
+ --- MAIR ----
+mair0:0x00000000
+mair1:0x00000000
+hmair0:0x00000000
+hmair1:0x00000000
+mair0:0xEEAA4400
+mair1:0xFF000004
+hmair0:0xEEAA4400
+hmair1:0xFF000004
+ --- HTCR ----
+htcr:0x80800000
+htcr:0x80802500
+hsctlr:0x30C50878
+hsctlr:0x30C5187A
+hcr:0x00000000
+httbr:0x000000000x00000000
+writing httbr:0x000000000xB0213000
+read back httbr:0x000000000xB0213000
+hsctlr:0x30C5187A
+hsctlr:0x30C5187F
+[memory] memory_init: exit
+[memory] host_memory_heap_init
+hcr:0x00000000
+hcr:0x00000018
+midr:0x412FC0F3
+cbar:0x10480000
+midr:0x412FC0F3
+cbar:0x10480000
+ba_gicd:0x10481000
+ba_gicc:0x10482000
+ba_gich:0x10484000
+ba_gicv:0x10485000
+ba_gicvi:0x10486000
+GICD_CTLR:0x00000000
+GICD_TYPER:0x0000FCE7
+GICD_IIDR:0x0200043B
+GIC: lines:0x00000100 cpus:0x00000008 IID:0x0200043B
+=== VGIC Status ===
+ Initialized:Yes
+ Num ListRegs:0x00000004
+ LR_MASK:0x000000000x0000000F
+vdev registered:'K-Hypervisor vDevice CP Module'
+vdev registered:'K-Hypervisor vDevice HVC dynamic instrumentation trap Module'
+vdev registered:'K-Hypervisor vDevice GICD Module'
+vdev init:'vdev_gicd_reset_values' vmid:0, gicd TYPER:0000fce7
+vdev init:'vdev_gicd_reset_values' vmid:0, gicd IIDR:0200043b
+vdev init:'vdev_gicd_reset_values' vmid:1, gicd TYPER:0000fce7
+vdev init:'vdev_gicd_reset_values' vmid:1, gicd IIDR:0200043b
+vdev init:'vdev_cp_reset_values'
+
+ _  __     _   ___   ______  _____ ______     _____ ____   ___  ____  
+| |/ /    | | | \ \ / /  _ \| ____|  _ \ \   / /_ _/ ___| / _ \|  _ \ 
+| ' /_____| |_| |\ V /| |_) |  _| | |_) \ \ / / | |\___ \| | | | |_) | 
+| . \_____|  _  | | | |  __/| |___|  _ < \ V /  | | ___) | |_| |  _ <  
+|_|\_\    |_| |_| |_| |_|   |_____|_| \_\ \_/  |___|____/ \___/|_| \_\ 
+
+cpsr: 0x000001D3
+  pc: 0x40000000
+  lr: 0x00000000
+ gpr:
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+     0x00000000
+guest bootloader
+midr:0x412FC0F3
+midr:0x412FC0F3
+gic baseaddr:0x10480000
+ba_gicd:0x10481000
+GICD_TYPER:[hyp] fipa: 10481004
+0x0000FCE7
+ba_gicc:0x10482000
+GICC_CTLR:0x00000213
+ GICC_PMR:0x000000F8
+ GICC_BPR:0x00000002
+ GICC_RPR:0x000000FF
+GICC_HPPIR:0x000003FF
+GICC_IIDR:0x0202043B
+[hyp] fipa: 10481104
+[hyp] fipa: 10481184
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481102
+[hyp] fipa: 10481100
+0x060FFFFD
+[hyp] fipa: 10481182
+[hyp] fipa: 10481100
+0x0600FFFD
+[hyp] fipa: 10481180
+[hyp] fipa: 10481184
+[hyp] fipa: 10481188
+[hyp] fipa: 1048118c
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000000
+Hit any key to stop autoboot : 0x00000005
+
+ _  __     _   ___   ______  _____ ______     _____ ____   ___  ____  
+| |/ /    | | | \ \ / /  _ \| ____|  _ \ \   / /_ _/ ___| / _ \|  _ \ 
+| ' /_____| |_| |\ V /| |_) |  _| | |_) \ \ / / | |\___ \| | | | |_) | 
+| . \_____|  _  | | | |  __/| |___|  _ < \ V /  | | ___) | |_| |  _ <  
+|_|\_\    |_| |_| |_| |_|   |_____|_| \_\ \_/  |___|____/ \___/|_| \_\ 
+
+Hit any key to stop autoboot : 0x00000004
+Hit any key to stop autoboot : 0x00000003
+guest bootloader
+midr:0x412FC0F3
+midr:0x412FC0F3
+gic baseaddr:0x10480000
+ba_gicd:0x10481000
+GICD_TYPER:[hyp] fipa: 10481004
+0x0000FCE7
+ba_gicc:0x10482000
+GICC_CTLR:0x00000213
+ GICC_PMR:0x000000F8
+ GICC_BPR:0x00000002
+ GICC_RPR:0x000000FF
+GICC_HPPIR:0x000003FF
+GICC_IIDR:0x0202043B
+[hyp] fipa: 10481104
+[hyp] fipa: 10481184
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481102
+[hyp] fipa: 10481100
+0x060FFFFD
+[hyp] fipa: 10481182
+[hyp] fipa: 10481100
+0x0600FFFD
+[hyp] fipa: 10481180
+[hyp] fipa: 10481184
+[hyp] fipa: 10481188
+[hyp] fipa: 1048118c
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000000
+Hit any key to stop autoboot : 0x00000005
+
+ _  __     _   ___   ______  _____ ______     _____ ____   ___  ____  
+| |/ /    | | | \ \ / /  _ \| ____|  _ \ \   / /_ _/ ___| / _ \|  _ \ 
+| ' /_____| |_| |\ V /| |_) |  _| | |_) \ \ / / | |\___ \| | | | |_) | 
+| . \_____|  _  | | | |  __/| |___|  _ < \ V /  | | ___) | |_| |  _ <  
+|_|\_\    |_| |_| |_| |_|   |_____|_| \_\ \_/  |___|____/ \___/|_| \_\ 
+
+Hit any key to stop autoboot : 0x00000002
+Hit any key to stop autoboot : 0x00000004
+Hit any key to stop autoboot : 0x00000001
+Hit any key to stop autoboot : 0x00000003
+Hit any key to stop autoboot : 0x00000000
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000001
+Booting guest os... kmh
+jump temp loader
+[hyp] fipa: 10481004
+[hyp] fipa: 10481104
+[hyp] fipa: 10481184
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481102
+[hyp] fipa: 10481100
+[hyp] fipa: 10481182
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481184
+[hyp] fipa: 10481188
+[hyp] fipa: 1048118c
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000000
+[hyp] fipa: 3fffe000
+Hit any key to stop autoboot : 0x00000002
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+Hit any key to stop autoboot : 0x00000001
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+Hit any key to stop autoboot : 0x00000000
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000001
+Booting guest os... kmh
+jump temp loader
+[geust2] :0x00000000=== Starting commom start up
+midr:0x412FC0F3
+midr:0x412FC0F3
+gic baseaddr:0x10480000
+ba_gicd:0x10481000
+GICD_TYPER:[hyp] fipa: 10481004
+0x0000FCE7
+ba_gicc:0x10482000
+GICC_CTLR:0x00000213
+ GICC_PMR:0x000000F8
+ GICC_BPR:0x00000002
+ GICC_RPR:0x000000FF
+GICC_HPPIR:0[hyp] fipa: 10481004
+x000003FF
+GICC_IIDR:0x0202043B
+[hyp] fipa: 10481104
+[hyp] fipa: 10481184
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481100
+[hyp] fipa: 10481180
+[hyp] fipa: 10481102
+[hyp] fipa: 10481100
+0x000F0000
+[hyp] fipa: 10481182
+[hyp] fipa: 10481100
+0x00000000
+[hyp] fipa: 10481180
+[hyp] fipa: 10481184
+[hyp] fipa: 10481188
+[hyp] fipa: 1048118c
+[hyp] fipa: 3fffe000
+vdev_vtimer_access_handler: write offset:0 value:00000000
+[geust2] :iteration 0x00000000
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x00000001
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000002
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000003
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000004
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000005
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000006
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000007
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000008
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000009
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000000A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x0000000B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000000C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000000D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000000E
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000000F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000010
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000011
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000012
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000013
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000014
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000015
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000016
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000017
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000018
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :r[hyp] fipa: 3fffe000
+eturned from hsvc_yield()
+[geust2] :iteration 0x00000019
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000001A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000001B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0[hyp] fipa: 3fffe000
+x0000001C
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000001D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000001E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000001F
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000020
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000021
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000022
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x00000023
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000024
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000025
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000026
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000027
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000028
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000029
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from[hyp] fipa: 3fffe000
+ hsvc_ping()
+[geust2] :iteration 0x0000002A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000002B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000002C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x0000002D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000002E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000002F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000030
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000031
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000032
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000033
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000034
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000035
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000036
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000037
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000038
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000039
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000003A
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield[hyp] fipa: 3fffe000
+()
+[geust2] :iteration 0x0000003B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000003C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000003D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x0000003E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000003F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000040
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000041
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000042
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000043
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000044
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x00000045
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000046
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000047
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000048
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000049
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000004A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000004B
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from[hyp] fipa: 3fffe000
+ hsvc_ping()
+[geust2] :iteration 0x0000004C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000004D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000004E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x0000004F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000050
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000051
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000052
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000053
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000054
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000055
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000056
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000057
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000058
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000059
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000005A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000005B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000005C
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield[hyp] fipa: 3fffe000
+()
+[geust2] :iteration 0x0000005D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000005E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000005F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000060
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000061
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000062
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000063
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000064
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000065
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000066
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :r[hyp] fipa: 3fffe000
+eturned from hsvc_yield()
+[geust2] :iteration 0x00000067
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000068
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000069
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x0000006A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000006B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000006C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000006D
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000006E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000006F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000070
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x00000071
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000072
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000073
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000074
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000075
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000076
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000077
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000078
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000079
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000007A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x000[hyp] fipa: 3fffe000
+0007B
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000007C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000007D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000007E
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000007F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000080
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000081
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x00000082
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000083
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000084
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000085
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000086
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000087
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000088
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield[hyp] fipa: 3fffe000
+()
+[geust2] :iteration 0x00000089
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000008A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000008B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x0000008C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000008D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000008E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000008F
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000090
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000091
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000092
+[geust2] :hsvc_yield([hyp] fipa: 3fffe000
+)
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x00000093
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000094
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000095
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0[hyp] fipa: 3fffe000
+x00000096
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000097
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000098
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x00000099
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from[hyp] fipa: 3fffe000
+ hsvc_ping()
+[geust2] :iteration 0x0000009A
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000009B
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000009C
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x0000009D
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000009E
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x0000009F
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A0
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A1
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A2
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A3
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[geust2] :iteration 0x000000A4
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A5
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A6
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A7
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A8
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000A9
+[hyp] fipa: 3fffe000
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :iteration 0x000000AA
+[geust2] :hsvc_yield()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_yield()
+[geust2] :iteration 0x000000AB
+[geust2] :hsvc_ping()
+[hyp] fipa: 3fffe000
+[geust2] :returned from hsvc_ping()
+[hyp] fipa: e3a03000
+[hvc] cann't search vdev number
+fipa is e3a03000 guest pc is 400001dc, ins:e2822040, vmm: 0
+ÿ
